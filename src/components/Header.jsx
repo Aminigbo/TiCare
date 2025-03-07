@@ -1,34 +1,13 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
 import Image from "../assets/images/Screenshot 2025-03-06 at 19.18.03 1.png";
+import { Link } from "react-router-dom";
 
 function Header({ handleScroll, handleScroll1 }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  const [scrolling, setScrolling] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-
-  // Handle screen resize
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  // Change background on scroll
-  useEffect(() => {
-    const headerHandleScroll = () => {
-      setScrolling(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", headerHandleScroll);
-    return () => window.removeEventListener("scroll", headerHandleScroll);
-  }, []);
 
   // Function to handle navigation and scrolling
   const handleNavigation = (scrollFunction) => {
@@ -44,23 +23,20 @@ function Header({ handleScroll, handleScroll1 }) {
   };
 
   return (
-    <header
-      className={`w-full fixed top-0 left-0 z-50 px-6 py-4 transition-all duration-300 overflow-hidden ${
-        isMobile ? "bg-white shadow-lg" : "bg-black opacity-85"
-      }`}
-    >
+    <header className="relative top-0 w-full z-40 px-6 py-4 transition-all duration-300 bg-white md:bg-black md:opacity-85">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="ml-4 md:ml-20">
-          <Link to="/">
-            <img src={Image} alt="Logo" className="h-15 w-auto transition-all" />
+          <Link to="/" onClick={() => setMenuOpen(false)}>
+            <img src={Image} alt="Logo" className="h-11 w-auto" />
           </Link>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-blue-600 p-2 rounded-md focus:outline-none mr-10"
+          className="md:hidden text-blue-500 p-1.5 focus:outline-none mr-5"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
         >
           <svg
             className="w-8 h-8"
@@ -69,23 +45,26 @@ function Header({ handleScroll, handleScroll1 }) {
             stroke="currentColor"
             strokeWidth="2"
           >
-            <path d="M4 6h16M4 12h16m-7 6h7" />
+            {menuOpen ? (
+              <path d="M6 18L18 6M6 6l12 12" /> // Close icon
+            ) : (
+              <path d="M4 6h16M4 12h16m-7 6h7" /> // Hamburger icon
+            )}
           </svg>
         </button>
 
-        {/* Navigation Links */}
         <nav
-          className={`absolute right-0 left-0 top-16 w-full md:static md:w-auto md:flex md:items-center mr-20 md:space-x-8 transition-all duration-300 z-50 ${
+          className={`absolute right-0 left-0 top-16 w-full md:static md:w-auto md:flex md:items-center md:space-x-6 transition-all mr-20 duration-300 ${
             menuOpen
-              ? "flex flex-col bg-gray-900 text-white shadow-lg py-6"
-              : "hidden md:flex"
+              ? "bg-black shadow-lg py-4"
+              : "hidden md:flex md:bg-transparent md:shadow-none"
           }`}
         >
-          <ul className="flex flex-col md:flex-row md:space-x-8 text-center text-lg">
+          <ul className="flex flex-col md:flex-row md:space-x-6 text-center w-full">
             <li>
               <Link
                 to="/"
-                className="text-blue-500 hover:text-blue-400 text-lg block py-2 md:py-0"
+                className="text-blue-500 block py-2 md:py-0 cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
                 Home
@@ -94,15 +73,15 @@ function Header({ handleScroll, handleScroll1 }) {
             <li>
               <span
                 onClick={() => handleNavigation(handleScroll)}
-                className="cursor-pointer text-white hover:text-blue-400 block py-2 md:py-0 transition duration-300"
+                className="text-white hover:text-blue-400 block py-2 md:py-0 cursor-pointer"
               >
-                Search trips
+                Search Trip
               </span>
             </li>
             <li>
               <span
                 onClick={() => handleNavigation(handleScroll1)}
-                className="cursor-pointer text-white hover:text-blue-400 block py-2 md:py-0 transition duration-300"
+                className="text-white hover:text-blue-400 block py-2 md:py-0 cursor-pointer"
               >
                 FAQ
               </span>
@@ -110,28 +89,20 @@ function Header({ handleScroll, handleScroll1 }) {
             <li>
               <Link
                 to="/join"
-                className="text-white hover:text-blue-400 block py-2 md:py-0"
+                className="text-white hover:text-blue-400 block py-2 md:py-0 cursor-pointer"
                 onClick={() => setMenuOpen(false)}
               >
                 Join to Ride
               </Link>
             </li>
+            <li>
+              <Link className="bg-white text-blue-500 p-1.5 shadow-blue-400 rounded-sm">Join to Drive</Link>
+            </li>
           </ul>
-
-          {/* CTA Button */}
-          <button className="text-blue-600 bg-white px-2 py-1 rounded-sm shadow-blue-500 hover:shadow-none transition-all w-full md:w-auto mt-4 md:mt-0 ">
-            Join to Drive
-          </button>
         </nav>
       </div>
     </header>
   );
 }
-
-// Default Props to Prevent Errors
-Header.defaultProps = {
-  handleScroll: () => {},
-  handleScroll1: () => {},
-};
 
 export default Header;

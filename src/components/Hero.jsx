@@ -16,7 +16,7 @@ function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-4xl flex flex-col items-center lg:items-center text-center space-y-6">
         {/* Logo & Welcome Text */}
-        <div className="flex flex-col items-center mt-20">
+        <div className="flex flex-col items-center">
           <h4 className="text-lg md:text-3xl font-medium mb-2">Welcome to</h4>
           <img
             src={Image}
