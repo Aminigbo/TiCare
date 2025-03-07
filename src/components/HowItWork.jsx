@@ -1,24 +1,24 @@
 import React from "react";
-import { MdCreateNewFolder } from "react-icons/md";
-import { BsCreditCard2BackFill } from "react-icons/bs";
-import { GiReceiveMoney } from "react-icons/gi";
+import { PiAmbulance } from "react-icons/pi";
+import { PiContactlessPayment } from "react-icons/pi";
+import { MdOutlineContactEmergency } from "react-icons/md";
 
 function HowItWorks({ scrollRef }) {
   const info = [
     {
-      icon: <MdCreateNewFolder className="text-3xl text-pink-600 " />,
+      icon: <PiAmbulance className="text-3xl text-pink-600 " />,
       title: "Register Your Ambulance",
       scribe:
         "Hospitals and private owners can list their ambulances and earn by providing emergency services.",
     },
     {
-      icon: <BsCreditCard2BackFill className="text-3xl text-blue-600 " />,
+      icon: <PiContactlessPayment className="text-3xl text-blue-600 " />,
       title: "Seamless Payments",
       scribe:
         "Pay conveniently for ambulance services using cash or card after each ride.",
     },
     {
-      icon: <GiReceiveMoney className="text-3xl text-green-500" />,
+      icon: <MdOutlineContactEmergency className="text-3xl text-green-500" />,
       title: "Stay Prepared",
       scribe:
         "Save emergency contacts, set preferred hospitals, and access life-saving first-aid tips anytime.",

@@ -1,8 +1,8 @@
 import React from "react";
-import { LuCar } from "react-icons/lu";
-import { IoCarSportSharp } from "react-icons/io5";
-import { TbShieldStar } from "react-icons/tb";
-import Image from "../assets/images/TiCare Transit (1).png";
+import { LuAmbulance } from "react-icons/lu";
+import { GiTransportationRings } from "react-icons/gi";
+import { MdOutlineHealthAndSafety } from "react-icons/md";
+import Image from "../assets/images/TiCare Transit (1)-min.png";
 
 function Qualities() {
   return (
@@ -25,7 +25,7 @@ function Qualities() {
         >
           <div className="flex items-center space-x-3">
             <div className="bg-white p-2.5 rounded-full">
-              <LuCar className="text-blue-500 text-xl font-bold" />
+              <LuAmbulance className="text-blue-500 text-xl font-bold" />
             </div>
             <h5 className="text-sm font-bold">INSTANT AMBULANCE REQUEST</h5>
           </div>
@@ -42,7 +42,7 @@ function Qualities() {
         >
           <div className="flex items-center space-x-3">
             <div className="bg-white p-2.5 rounded-full">
-              <IoCarSportSharp className="text-blue-500 text-xl font-bold" />
+              <GiTransportationRings className="text-blue-500 text-xl font-bold" />
             </div>
             <h5 className="text-sm font-bold"> SAFE & RELIABLE TRANSPORT</h5>
           </div>
@@ -59,7 +59,7 @@ function Qualities() {
         >
           <div className="flex items-center space-x-3">
             <div className="bg-white p-2.5 rounded-full">
-              <TbShieldStar className="text-blue-500 text-xl font-bold" />
+              <MdOutlineHealthAndSafety className="text-blue-500 text-xl font-bold" />
             </div>
             <h5 className="text-sm font-bold">BUILT-IN SAFETY FEATURES</h5>
           </div>

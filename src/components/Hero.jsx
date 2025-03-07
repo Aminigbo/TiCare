@@ -2,13 +2,13 @@ import React from "react";
 import Image from "../assets/images/Screenshot 2025-03-06 at 19.18.03 1.png";
 import Image1 from "../assets/images/apple-store.webp";
 import Image2 from "../assets/images/google-store.webp";
-import BackgroundImage from "../assets/images/TiCare Transit.jpg";
+import BackgroundImage from "../assets/images/test.jpg";
 import { Link } from "react-router-dom";
 
 function Hero() {
   return (
     <div
-      className="relative min-h-screen flex flex-col items-center justify-center text-white text-center px-6 md:px-12 lg:px-24 bg-contain bg-center"
+      className="relative min-h-screen flex flex-col items-center justify-center text-white text-center px-6 md:px-12 lg:px-24 bg-cover bg-center overflow-hidden"
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
       {/* Dark Gradient Overlay */}

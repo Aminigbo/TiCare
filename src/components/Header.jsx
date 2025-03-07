@@ -28,7 +28,7 @@ function Header({ handleScroll, handleScroll1 }) {
         {/* Logo */}
         <div className="ml-4 md:ml-20">
           <Link to="/" onClick={() => setMenuOpen(false)}>
-            <img src={Image} alt="Logo" className="h-11 w-auto" />
+            <img src={Image} alt="Logo" className="h-14 w-16" />
           </Link>
         </div>
 
@@ -85,18 +85,6 @@ function Header({ handleScroll, handleScroll1 }) {
               >
                 FAQ
               </span>
-            </li>
-            <li>
-              <Link
-                to="/join"
-                className="text-white hover:text-blue-400 block py-2 md:py-0 cursor-pointer"
-                onClick={() => setMenuOpen(false)}
-              >
-                Join to Ride
-              </Link>
-            </li>
-            <li>
-              <Link className="bg-white text-blue-500 p-1.5 shadow-blue-400 rounded-sm">Join to Drive</Link>
             </li>
           </ul>
         </nav>

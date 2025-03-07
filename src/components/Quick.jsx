@@ -1,7 +1,7 @@
 import React from "react";
-import { HiOutlineUsers } from "react-icons/hi2";
-import { TbCurrencyNaira } from "react-icons/tb";
-import { TfiWallet } from "react-icons/tfi";
+import { MdOutlineEmergencyShare } from "react-icons/md";
+import { SiContactlesspayment } from "react-icons/si";
+import { RiServiceFill } from "react-icons/ri";
 
 export default function Quick() {
   return (
@@ -29,7 +29,7 @@ export default function Quick() {
           {/* Feature Item */}
           <div className="flex items-start space-x-4 p-4 border-b-1">
             <div className="bg-pink-100 p-4 rounded-full flex items-center justify-center">
-              <HiOutlineUsers className="text-2xl text-pink-900" />
+              <MdOutlineEmergencyShare className="text-2xl text-pink-900" />
             </div>
             <div>
               <h4 className="text-lg font-semibold text-gray-900">
@@ -45,7 +45,7 @@ export default function Quick() {
           {/* Feature Item */}
           <div className="flex items-start space-x-4 p-4 border-b-1">
             <div className="bg-green-100 p-4 rounded-full flex items-center justify-center">
-              <TbCurrencyNaira className="text-2xl text-green-900" />
+              <SiContactlesspayment className="text-2xl text-green-900" />
             </div>
             <div>
               <h4 className="text-lg font-semibold text-gray-900">
@@ -60,7 +60,7 @@ export default function Quick() {
           {/* Feature Item */}
           <div className="flex items-start space-x-4 p-4">
             <div className="bg-blue-100 p-4 rounded-full flex items-center justify-center">
-              <TfiWallet className="text-2xl text-blue-900" />
+              <RiServiceFill className="text-2xl text-blue-900" />
             </div>
             <div>
               <h4 className="text-lg font-semibold text-gray-900">

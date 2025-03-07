@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "../assets/images/Group 5975-B7GJHOyI.png";
 import { FaUsersViewfinder } from "react-icons/fa6";
-import { RiRefund2Line } from "react-icons/ri";
+import { PiContactlessPaymentFill } from "react-icons/pi";
 
 function Security() {
   return (
@@ -42,7 +42,7 @@ function Security() {
         </div>
         <div className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 bg-white p-5 rounded-lg shadow-sm hover:shadow-lg hover:scale-105">
           <div className="bg-green-100 p-4 sm:p-5 rounded-full">
-            <RiRefund2Line className="text-green-700 w-6 h-6 sm:w-8 sm:h-8" />
+            <PiContactlessPaymentFill className="text-green-700 w-6 h-6 sm:w-8 sm:h-8" />
           </div>
           <div className="text-center sm:text-left">
             <h4 className="text-sm sm:text-lg font-semibold mb-2 text-cyan-950">

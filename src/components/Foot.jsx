@@ -36,23 +36,15 @@ function Foot() {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/terms&conditions"
                   className="text-white hover:text-gray-400 transition"
                 >
-                  News & Events
+                  Terms& Conditions
                 </Link>
               </li>
               <li>
                 <Link
-                  to="#"
-                  className="text-white hover:text-gray-400 transition"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="#"
+                  to="/privacy-policy"
                   className="text-white hover:text-gray-400 transition"
                 >
                   Privacy Policy
@@ -72,7 +64,7 @@ function Foot() {
                 to="#"
                 className="text-white hover:text-gray-400 transition"
               >
-                (+234) 020-1887-0270
+                (+234) 9067964607
               </Link>
             </p>
             <p className="mt-2">
@@ -80,7 +72,7 @@ function Foot() {
                 to="mailto:support@lagosride.com"
                 className="text-white hover:text-gray-400 transition"
               >
-                support@lagosride.com
+                hello@ticareapp.com
               </Link>
             </p>
           </div>
