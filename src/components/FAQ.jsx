@@ -5,19 +5,19 @@ import Image from "../assets/images/Screenshot 2025-02-20 at 10.27.11-CQqAZsEn.p
 function FAQ() {
   const faqs = [
     {
-      question: "What is Pocket Voucher?",
+      question: "How does TiCare work?",
       answer:
-        "Pocket Voucher is a digital voucher system that allows users to make purchases and redeem discounts seamlessly.",
+        "TiCare connects users with the nearest available ambulance in case of a medical emergency. Simply enter your pickup location, request an ambulance, and a registered service provider will arrive promptly.",
     },
     {
-      question: "How do I use a Pocket Voucher?",
+      question: " Who can register as an ambulance provider on TiCare?",
       answer:
-        "Simply enter the voucher code at checkout to apply the discount or redeem it at participating stores.",
+        "Hospitals, emergency response units, and private ambulance owners can sign up on TiCare to offer their services. Each provider undergoes a verification process before being listed.",
     },
     {
-      question: "Where can I redeem my Pocket Voucher?",
+      question: "How do I pay for an ambulance service?",
       answer:
-        "You can redeem your Pocket Voucher at all partnered stores listed in our app and website.",
+        "You can pay using cash or card. TiCare ensures secure transactions and a seamless payment experience.",
     },
   ];
 

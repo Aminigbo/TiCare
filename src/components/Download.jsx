@@ -11,8 +11,8 @@ function Download() {
         Have An Emergency? Download Now
       </h1>
       <p className="text-gray-600 mt-2 max-w-lg">
-        Refer a friend to win free rides, concert tickets, and so much more on
-        LagosRide.
+        Invite your friends to join TiCare because the more people who are
+        prepared, the safer we all are!
       </p>
 
       {/* Store Links */}

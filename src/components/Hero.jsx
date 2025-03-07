@@ -2,7 +2,7 @@ import React from "react";
 import Image from "../assets/images/Screenshot 2025-03-06 at 19.18.03 1.png";
 import Image1 from "../assets/images/apple-store.webp";
 import Image2 from "../assets/images/google-store.webp";
-import BackgroundImage from "../assets/images/download.jpg";
+import BackgroundImage from "../assets/images/TiCare Transit.jpg";
 
 function Hero() {
   return (
@@ -11,7 +11,7 @@ function Hero() {
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
       {/* Dark Gradient Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/70"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl flex flex-col items-center lg:items-center text-center space-y-6">
@@ -27,8 +27,7 @@ function Hero() {
 
         {/* Main Heading */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-lg">
-          Experience the Joy of a <br className="hidden md:inline" /> Service
-          Built for You
+          Fast, Reliable Ambulance Service When Every Second Counts
         </h1>
 
         {/* Download Section */}

@@ -75,7 +75,7 @@ function Header({ handleScroll, handleScroll1 }) {
                 onClick={() => handleNavigation(handleScroll)}
                 className="text-white hover:text-blue-400 block py-2 md:py-0 cursor-pointer"
               >
-                Search Trip
+                Features
               </span>
             </li>
             <li>

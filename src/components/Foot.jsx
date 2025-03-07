@@ -9,15 +9,15 @@ function Foot() {
         {/* Left Section */}
         <div className="md:w-1/3">
           <img src={Image} alt="LagosRide Logo" className="w-30 mb-4" />
-          <p className="text-white text-sm leading-relaxed">
-            We believe your transit moments should offer some comfort, a good
-            time to relax and unwind from work. As Lagosians, we do things by
-            ourselves, but we know it is great to have someone tend to you while
-            you are on the move...
-          </p>
           <span className="text-white font-semibold mt-4 block text-sm">
-            Powered by Zeno
+            In Emergencies, Every Second Counts.
           </span>
+          <p className="text-white text-sm leading-relaxed">
+            At TiCare, we believe that getting urgent medical help should be
+            fast, seamless, and reliable. Whether at home, work, or on the road,
+            you deserve swift emergency response at the tap of a button—because
+            your safety is our priority.
+          </p>
         </div>
 
         {/* Right Section */}

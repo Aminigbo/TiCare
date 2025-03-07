@@ -12,43 +12,66 @@ export default function Quick() {
           A Quick Glance At What Makes Us Special
         </h2>
         <p className="text-gray-700">
-          LagosRide is a mobility solution that will allow users book and share
-          the cost of a ride with similar transit patterns.
+          TiCare is a healthtech solution designed to provide fast and reliable
+          ambulance services at the tap of a button.
         </p>
         <p className="text-gray-700">
-          It will link users up based on their preferred pick-up and drop-off
-          points, each not more than 1km apart respectively, and a pick-up time
-          not more than 5mins apart.
+          Whether it's an emergency at home, on the road, or anywhere else,
+          TiCare connects you to the nearest available ambulance for immediate
+          assistance.
         </p>
       </div>
 
       {/* Right Side Box */}
-      <div className="border-t-20 border-blue-400 bg-gray-100 p-6 rounded-lg shadow-md">
+      <div className="bg-gray-100 p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
         {/* Features */}
-        <div className="flex items-center space-x-4 pb-4 border-b border-gray-300">
-          <div className="bg-pink-100 p-5 rounded-full">
-            <HiOutlineUsers className="text-lg text-pink-900" />
+        <div className="space-y-6">
+          {/* Feature Item */}
+          <div className="flex items-start space-x-4 p-4 border-b-1">
+            <div className="bg-pink-100 p-4 rounded-full flex items-center justify-center">
+              <HiOutlineUsers className="text-2xl text-pink-900" />
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold text-gray-900">
+                Instant Access to Emergency Care
+              </h4>
+              <p className="text-gray-700 text-sm">
+                Request an ambulance in seconds, and help arrives at your
+                location.
+              </p>
+            </div>
           </div>
-          <p className="text-gray-800">
-            Reduces the frequency of “Single Occupancy Vehicles (SOV)” resulting
-            from cheaper fares per trip.
-          </p>
-        </div>
 
-        <div className="flex items-center space-x-4 py-4 border-b border-gray-300">
-          <div className="bg-green-100 p-5 rounded-full">
-            <TbCurrencyNaira className="text-lg text-green-900" />
+          {/* Feature Item */}
+          <div className="flex items-start space-x-4 p-4 border-b-1">
+            <div className="bg-green-100 p-4 rounded-full flex items-center justify-center">
+              <TbCurrencyNaira className="text-2xl text-green-900" />
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold text-gray-900">
+                Seamless Payments
+              </h4>
+              <p className="text-gray-700 text-sm">
+                Pay easily with cash or card after the ride.
+              </p>
+            </div>
           </div>
-          <p className="text-gray-800">
-            You will now enjoy the comfort of a car ride but pay less.
-          </p>
-        </div>
 
-        <div className="flex items-center space-x-4 pt-4">
-          <div className="bg-blue-100 p-5 rounded-full">
-            <TfiWallet className="text-lg text-blue-900" />
+          {/* Feature Item */}
+          <div className="flex items-start space-x-4 p-4">
+            <div className="bg-blue-100 p-4 rounded-full flex items-center justify-center">
+              <TfiWallet className="text-2xl text-blue-900" />
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold text-gray-900">
+                Empowering Service Providers
+              </h4>
+              <p className="text-gray-700 text-sm">
+                Hospitals and individuals with ambulances can register and earn
+                by providing lifesaving services.
+              </p>
+            </div>
           </div>
-          <p className="text-gray-800">Drivers will earn more per trip.</p>
         </div>
       </div>
     </div>
