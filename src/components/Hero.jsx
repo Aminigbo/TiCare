@@ -3,11 +3,12 @@ import Image from "../assets/images/Screenshot 2025-03-06 at 19.18.03 1.png";
 import Image1 from "../assets/images/apple-store.webp";
 import Image2 from "../assets/images/google-store.webp";
 import BackgroundImage from "../assets/images/TiCare Transit.jpg";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
     <div
-      className="relative min-h-screen flex flex-col items-center justify-center text-white text-center px-6 md:px-12 lg:px-24 bg-cover bg-center"
+      className="relative min-h-screen flex flex-col items-center justify-center text-white text-center px-6 md:px-12 lg:px-24 bg-contain bg-center"
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
       {/* Dark Gradient Overlay */}
@@ -34,16 +35,20 @@ function Hero() {
         <div className="mt-6">
           <p className="text-lg md:text-xl text-gray-300 mb-3">Download on</p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-            <img
-              src={Image1}
-              alt="Apple Store"
-              className="w-40 md:w-44 cursor-pointer hover:scale-105 transition-transform"
-            />
-            <img
-              src={Image2}
-              alt="Google Store"
-              className="w-40 md:w-44 cursor-pointer hover:scale-105 transition-transform"
-            />
+            <Link>
+              <img
+                src={Image1}
+                alt="Apple Store"
+                className="w-40 md:w-44 cursor-pointer hover:scale-105 transition-transform"
+              />
+            </Link>
+            <Link>
+              <img
+                src={Image2}
+                alt="Google Store"
+                className="w-40 md:w-44 cursor-pointer hover:scale-105 transition-transform"
+              />
+            </Link>
           </div>
         </div>
       </div>
