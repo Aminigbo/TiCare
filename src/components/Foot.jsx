@@ -57,7 +57,7 @@ function Foot() {
           <div>
             <h5 className="text-lg font-bold text-white">CONTACT US</h5>
             <p className="text-white mt-2 text-sm">
-              Kajola House, 62/64 Campbell street, Victoria Island, Lagos
+             Port Harcourt, Rivers State
             </p>
             <p className="mt-2">
               <Link
