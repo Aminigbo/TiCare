@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import Image from "../assets/images/Screenshot 2025-02-20 at 10.27.11-CQqAZsEn.png";
+import Image from "../assets/images/mobile app ii.png";
 
 function FAQ() {
   const faqs = [
@@ -70,11 +70,11 @@ function FAQ() {
           ))}
         </div>
       </div>
-      <div className="w-full ml-20 max-w-md lg:max-w-80">
+      <div className="w-full max-w-md lg:max-w-[500px]">
         <img
           src={Image}
           alt="FAQ"
-          className="w-80 mr-30 max-w-sm md:max-w-md lg:max-w-60"
+          className="w-full max-w-lg md:max-w-md lg:max-w-none"
         />
       </div>
     </div>

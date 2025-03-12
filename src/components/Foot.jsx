@@ -57,7 +57,7 @@ function Foot() {
           <div>
             <h5 className="text-lg font-bold text-white">CONTACT US</h5>
             <p className="text-white mt-2 text-sm">
-             Port Harcourt, Rivers State
+             Elzazi Plaza, Gbalajam, Off Alcon Road, Port Harcourt, Rivers State
             </p>
             <p className="mt-2">
               <Link
