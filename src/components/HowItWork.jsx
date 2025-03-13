@@ -27,7 +27,7 @@ function HowItWorks({ scrollRef }) {
 
   return (
     <div ref={scrollRef}>
-      <header className="text-center text-3xl text-cyan-950 font-bold mb-20">
+      <header className="text-center text-2xl text-cyan-950 font-bold mb-7 mt-10">
         WE HAVE MORE FOR YOU!
       </header>
       <div className="flex flex-wrap justify-center gap-20 p-6 mb-10">
